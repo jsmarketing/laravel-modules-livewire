@@ -75,7 +75,7 @@ class LivewireComponentServiceProvider extends ServiceProvider
                     ->map([Str::class, 'kebab'])
                     ->implode('.');
 
-                Livewire::component($alias, '\'.$class);
+                Livewire::component($alias, '\\'.$class);
             });
     }
 }
